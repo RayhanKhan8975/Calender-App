@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="container">   
+ <div class="row">
+  <h1 class="card-header col-sm-12 text-align-center" id="header"></h1>
+</div>
+  <div class="row" id="utility">
+  
+  <select class="form-control  col-sm-5  btn-warning" id="selectYear" onchange="jump()"></select>
+  <div class="col-sm-2"style="
+  background-image: linear-gradient(to right,#ffc107,#dc3545);"></div>
+  <select class="form-control  col-sm-5  btn-danger" id="selectMonth"onchange="jump()"></select>
+
+  </div>
+  <div class="row row-content">    
+ 
+  <table class="col-sm-12" id="table" class="table"></table>
+
+</div>
+<div class="row">
+    <button class="btn col-sm-1 col-sm-5 bg-danger" id="previous"><span class=" carousel-control-prev-icon"></span> </button>
+    <div class="col-sm-2" id="grad" style="
+  background-image: linear-gradient(to right,#dc3545,#28a745);"></div>
+      <button class="btn col-sm-1 col-sm-5 bg-success" id="next"><span class="carousel-control-next-icon"></span> </button>
+
+</div>
+<div class="row"><h3 class="card-header col-sm-12" style="text-align: center;">Events</h3> </div>
+<div id="events" class="row"></div>
+</div>
+<script src="scripts/add-events.js" ></script>
+<script src="scripts/create-buttons.js" ></script>
+<script src="scripts/delete-item.js" ></script>
+<script src="scripts/display-id.js" ></script>
+<script src="scripts/jump.js" ></script>
+<script src="scripts/log-btn-date.js" ></script>
+<script src="scripts/randomaccess.js" ></script>
+<script src="scripts/show-calender.js" ></script>
+<script src="main.js"></script>
+</body>
+</html>
